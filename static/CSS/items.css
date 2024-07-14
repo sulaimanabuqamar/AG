@@ -1,0 +1,76 @@
+.grid {
+    display: grid;
+    grid-gap: 25px;
+    justify-items: center;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+}
+
+.itemDetailBox {
+    display: flex;
+    width: 500px;
+    height: 300px;
+    background: #FFEBCC;
+    border-radius: 40px;
+    overflow: hidden;
+    border: 8px #CFB081 solid;
+    padding: 0px 30px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textRow {
+    display: flex;
+    gap: 10px;
+}
+
+.actionBox {
+    width: 204px; 
+    height: 91px; 
+    padding-top: 20px; 
+    padding-bottom: 21px; 
+    background: #825819; 
+    border-radius: 40px; 
+    overflow: hidden; 
+    border: 8px #CFB081 solid; 
+    justify-content: center; 
+    align-items: center; 
+    display: inline-flex;
+}
+
+.actionText {
+    text-align: center; 
+    color: white; 
+    font-size: 30px; 
+    font-family: Kadwa; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+
+.actionDetailBox {
+    display: flex;
+    width: 500px;
+    position: relative;
+    background: #FFEBCC;
+    border-radius: 40px;
+    overflow: hidden;
+    border: 8px #CFB081 solid;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 30px;
+}
+
+.hBox {
+    width: 80%;
+    height: 300px;
+    position: relative;
+    background: #CFB081;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    overflow: hidden;
+    border: 8px #825819 solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}

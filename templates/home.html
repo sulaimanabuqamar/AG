@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'CSS/common.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/home.css' %}">
+    <title>Home</title>
+</head>
+<body style="padding: 50px;">
+    <div class="container" style="justify-content: space-evenly;">
+        <div class="grid">
+            <a href="{% url 'coils' %}">
+                <div class="homeBox">
+                    <p class="title">COILS</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="homeBox">
+                    <p class="title">FUTURE ITEM</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="homeBox">
+                    <p class="title">FUTURE ITEM</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="homeBox">
+                    <p class="title">FUTURE ITEM</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="homeBox">
+                    <p class="title">FUTURE ITEM</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <br>
+</body>
+</html>

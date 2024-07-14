@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'CSS/common.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/items.css' %}">
+    <title>Coils</title>
+</head>
+<body>
+    <div class="container" style="justify-content: center; margin: -8px; flex-direction: column; align-items: center; gap: 50px;">
+        <div class="hBox">
+            <div>
+                <p class="title" style="display: flex; flex-direction: row; align-items: center; justify-content: center;">COILS</p>
+            </div>
+            <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 150px;">
+                <p class="subtitle">Number of Coils: <!-- # OF COILS HERE --></p>
+                <p class="subtitle">Total Wastage: <!-- TOTAL WASTAGE HERE -->m</p>
+                <div style="display: flex; flex-direction: row;">
+                    <img class="icon" src="{% static '../media/images/add-button.png' %}" alt="Add">
+                    <p class="subtitle" style="margin: 0px;">Add</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="grid">
+                <a href="{% url 'coil_detail' %}">
+                    <div class="itemDetailBox">
+                        <div class="textRow"><p class="text bold" style="margin: 0px;">Coil ID:</p><p class="text" style="margin: 0px;"><!-- COIL ID HERE --></p></div>
+                        <div class="textRow"><p class="text bold" style="margin: 0px;">Length:</p><p class="text" style="margin: 0px;"><!-- COIL LENGTH HERE --></p></div>
+                        <div class="textRow"><p class="text bold" style="margin: 0px;">Width:</p><p class="text" style="margin: 0px;"><!-- COIL WIDTH HERE --></p></div>
+                        <div class="textRow"><p class="text bold" style="margin: 0px;">Thickness:</p><p class="text" style="margin: 0px;"><!-- COIL THICKNESS HERE --></p></div>
+                        <div class="textRow"><p class="text bold" style="margin: 0px;">Net Weight:</p><p class="text" style="margin: 0px;"><!-- COIL NET WEIGHT HERE --></p></div>
+                        <div class="textRow"><p class="text bold" style="margin: 0px;">Wasted:</p><p class="text" style="margin: 0px;"><!-- COIL WASTED HERE --></p></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br>
+</body>
+</html>

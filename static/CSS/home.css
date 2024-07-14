@@ -1,0 +1,18 @@
+.homeBox {
+    width: 500px; 
+    height: 300px; 
+    background: #CFB081; 
+    border-radius: 40px; 
+    overflow: hidden; 
+    border: 8px #825819 solid; 
+    justify-content: center; 
+    align-items: center; 
+    display: inline-flex;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 100px;
+    justify-items: center;
+    grid-template-columns: repeat(2, minmax(500px, 1fr));
+}

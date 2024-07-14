@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'CSS/common.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/items.css' %}">
+    <title>Coil - <!-- COIL ID HERE --> </title>
+</head>
+<body>
+    <div class="container" style="justify-content: center; margin: -8px; flex-direction: column; align-items: center; gap: 50px;">
+        <div class="hBox">
+            <div>
+                <p class="title" style="display: flex; flex-direction: row; align-items: center; justify-content: center; margin: 0px;">COIL #<!-- COIL ID HERE --></p>
+            </div>
+            <br>
+            <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 150px;">
+                <p class="subtitle" style="margin: 0px;">Number of Items: <!-- # OF ITEMS HERE --></p>
+                <p class="subtitle" style="margin: 0px;">Total Wastage: <!-- TOTAL WASTAGE HERE --></p>
+                <div style="display: flex; flex-direction: row;">
+                    <img class="icon" src="{% static '../media/images/add-button.png' %}" alt="Add">
+                    <p class="subtitle" style="margin: 0px;">Finished</p>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 150px;">
+                <p class="subtitle" style="margin: 0px;">Length: <!-- # OF ITEMS HERE --></p>
+                <p class="subtitle" style="margin: 0px;">Width: <!-- TOTAL WASTAGE HERE --></p>
+                <p class="subtitle" style="margin: 0px;">Thickness: <!-- TOTAL WASTAGE HERE --></p>
+            </div>
+        </div>
+        <div style="display: flex; width: 80%; justify-content: space-evenly;">
+            <div class="actionBox">
+                <p class="actionText">SLIT</p>
+            </div>
+            <div class="actionBox">
+                <p class="actionText">S&C 52</p>
+            </div>
+            <div class="actionBox">
+                <p class="actionText">S&C 92</p>
+            </div>
+            <div class="actionBox">
+                <p class="actionText">PERFORAT</p>
+            </div>
+            <div class="actionBox">
+                <p class="actionText">SHEET</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="actionDetailBox">
+                <div>
+                    <p class="text bold" style="margin: 0px; display: flex; justify-content: center;">SLIT</p>
+
+                </div>
+                <div>
+                    <div class="textRow"><p class="text bold" style="margin: 0px;">Items:</p><p class="text" style="margin: 0px;"><!-- # OF ITEMS HERE --></p></div>
+                    <div class="textRow"><p class="text bold" style="margin: 0px;">Attribute 1:</p><p class="text" style="margin: 0px;"><!-- COIL ATTRIBUTE HERE --></p></div>
+                    <div class="textRow"><p class="text bold" style="margin: 0px;">Attribute 2:</p><p class="text" style="margin: 0px;"><!-- COIL ATTRIBUTE HERE --></p></div>
+                </div>
+            </div>
+        <div>
+    </div>
+    <br>
+</body>
+</html>
